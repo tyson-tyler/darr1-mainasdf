@@ -241,10 +241,7 @@ const Checkout: React.FC<CheckoutProps> = ({ productList }) => {
               Step 3: Payment Mode
             </h2>
             <div className="flex flex-col gap-2">
-              {[
-                { label: "Prepaid", value: "prepaid" },
-                { label: "Cash On Delivery", value: "cod" },
-              ].map((mode) => (
+              {[{ label: "Cash On Delivery", value: "cod" }].map((mode) => (
                 <button
                   key={mode.value}
                   onClick={() =>
